@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"encoder\startup_stm32f407xx.o"
+"encoder\main.o"
+"encoder\gpio.o"
+"encoder\tim.o"
+"encoder\stm32f4xx_it.o"
+"encoder\stm32f4xx_hal_msp.o"
+"encoder\stm32f4xx_hal_tim.o"
+"encoder\stm32f4xx_hal_tim_ex.o"
+"encoder\stm32f4xx_hal_rcc.o"
+"encoder\stm32f4xx_hal_rcc_ex.o"
+"encoder\stm32f4xx_hal_flash.o"
+"encoder\stm32f4xx_hal_flash_ex.o"
+"encoder\stm32f4xx_hal_flash_ramfunc.o"
+"encoder\stm32f4xx_hal_gpio.o"
+"encoder\stm32f4xx_hal_dma_ex.o"
+"encoder\stm32f4xx_hal_dma.o"
+"encoder\stm32f4xx_hal_pwr.o"
+"encoder\stm32f4xx_hal_pwr_ex.o"
+"encoder\stm32f4xx_hal_cortex.o"
+"encoder\stm32f4xx_hal.o"
+"encoder\stm32f4xx_hal_exti.o"
+"encoder\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Encoder\Encoder.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Encoder.map" -o Encoder\Encoder.axf
