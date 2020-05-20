@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"delayus\startup_stm32f407xx.o"
+"delayus\main.o"
+"delayus\gpio.o"
+"delayus\tim.o"
+"delayus\stm32f4xx_it.o"
+"delayus\stm32f4xx_hal_msp.o"
+"delayus\stm32f4xx_hal_tim.o"
+"delayus\stm32f4xx_hal_tim_ex.o"
+"delayus\stm32f4xx_hal_rcc.o"
+"delayus\stm32f4xx_hal_rcc_ex.o"
+"delayus\stm32f4xx_hal_flash.o"
+"delayus\stm32f4xx_hal_flash_ex.o"
+"delayus\stm32f4xx_hal_flash_ramfunc.o"
+"delayus\stm32f4xx_hal_gpio.o"
+"delayus\stm32f4xx_hal_dma_ex.o"
+"delayus\stm32f4xx_hal_dma.o"
+"delayus\stm32f4xx_hal_pwr.o"
+"delayus\stm32f4xx_hal_pwr_ex.o"
+"delayus\stm32f4xx_hal_cortex.o"
+"delayus\stm32f4xx_hal.o"
+"delayus\stm32f4xx_hal_exti.o"
+"delayus\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "delayus\delayus.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "delayus.map" -o delayus\delayus.axf
