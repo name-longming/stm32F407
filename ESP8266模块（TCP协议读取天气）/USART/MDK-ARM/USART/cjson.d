@@ -1,0 +1,10 @@
+usart\cjson.o: ..\Src\cJSON.c
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+usart\cjson.o: ../Inc/cJSON.h
+usart\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
