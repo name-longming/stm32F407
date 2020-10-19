@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"tfmin\startup_stm32f407xx.o"
+"tfmin\main.o"
+"tfmin\gpio.o"
+"tfmin\usart.o"
+"tfmin\stm32f4xx_it.o"
+"tfmin\stm32f4xx_hal_msp.o"
+"tfmin\stm32f4xx_hal_tim.o"
+"tfmin\stm32f4xx_hal_tim_ex.o"
+"tfmin\stm32f4xx_hal_uart.o"
+"tfmin\stm32f4xx_hal_rcc.o"
+"tfmin\stm32f4xx_hal_rcc_ex.o"
+"tfmin\stm32f4xx_hal_flash.o"
+"tfmin\stm32f4xx_hal_flash_ex.o"
+"tfmin\stm32f4xx_hal_flash_ramfunc.o"
+"tfmin\stm32f4xx_hal_gpio.o"
+"tfmin\stm32f4xx_hal_dma_ex.o"
+"tfmin\stm32f4xx_hal_dma.o"
+"tfmin\stm32f4xx_hal_pwr.o"
+"tfmin\stm32f4xx_hal_pwr_ex.o"
+"tfmin\stm32f4xx_hal_cortex.o"
+"tfmin\stm32f4xx_hal.o"
+"tfmin\stm32f4xx_hal_exti.o"
+"tfmin\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TFmin\TFmin.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFmin.map" -o TFmin\TFmin.axf
