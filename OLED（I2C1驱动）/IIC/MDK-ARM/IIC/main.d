@@ -32,3 +32,4 @@ iic\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 iic\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 iic\main.o: ../Inc/i2c.h
 iic\main.o: ../Inc/gpio.h
+iic\main.o: .\IIC\oled.h

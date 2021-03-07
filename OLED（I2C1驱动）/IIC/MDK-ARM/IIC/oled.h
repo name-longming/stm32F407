@@ -3,8 +3,6 @@
 
 #include "i2c.h"
  
- #define u8 uint8_t
- #define u32 uint32_t
 
 #define OLED0561_ADD	0x78  // OLEDµÄI2CµØÖ·£¨½ûÖ¹ÐÞ¸Ä£©
 #define COM				0x00  // OLED Ö¸Áî£¨½ûÖ¹ÐÞ¸Ä£©
@@ -22,9 +20,9 @@ void OLED_ShowStr(unsigned char x, unsigned char y, unsigned char ch[], unsigned
 void OLED_ShowCN(unsigned char x, unsigned char y, unsigned char N);//ÏÔÊ¾ºº×Ö
 void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned char y1,unsigned char BMP[]);//ÏÔÊ¾Í¼Æ¬
 
-void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size);
-u32 oled_pow(u8 m,u8 n);
-void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2);//size2(16|12)
+void OLED_ShowChar(uint8_t x,uint8_t y,uint8_t chr,uint8_t Char_Size);
+uint32_t oled_pow(uint8_t m,uint8_t n);
+void OLED_ShowNum(uint8_t x,uint8_t y,uint32_t num,uint8_t len,uint8_t size2);//size2(16|12)
 
 
 

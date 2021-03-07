@@ -190,7 +190,7 @@ void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned ch
 
 
 
-void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size)
+void OLED_ShowChar(uint8_t x,uint8_t y,uint8_t chr,uint8_t Char_Size)
 {      	
 	unsigned char c=0,i=0;	
 		c=chr-' ';//得到偏移后的值			
@@ -211,9 +211,9 @@ void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size)
 				
 			}
 }
-u32 oled_pow(u8 m,u8 n)
+uint32_t oled_pow(uint8_t m,uint8_t n)
 {
-	u32 result=1;	 
+	uint32_t result=1;	 
 	while(n--)result*=m;    
 	return result;
 }	
@@ -225,10 +225,10 @@ u32 oled_pow(u8 m,u8 n)
 //size:字体大小
 //mode:模式	0,填充模式;1,叠加模式
 //num:数值(0~4294967295);	 		  
-void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2)
+void OLED_ShowNum(uint8_t x,uint8_t y,uint32_t num,uint8_t len,uint8_t size2)
 {         	
-	u8 t,temp;
-	u8 enshow=0;						   
+	uint8_t t,temp;
+	uint8_t enshow=0;						   
 	for(t=0;t<len;t++)
 	{
 		temp=(num/oled_pow(10,len-t-1))%10;

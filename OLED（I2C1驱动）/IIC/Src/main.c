@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "oled.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,10 +90,10 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 	MX_I2C1_Init();
-//	OLED_Init();
+	OLED_Init();
   /* USER CODE END 2 */
-//	OLED_CLS();
-//	OLED_ShowStr(0,0,"ytg",2);
+	OLED_CLS();
+	OLED_ShowStr(0,0,"ytg",2);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
